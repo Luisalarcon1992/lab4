@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Gestión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Sistema de Gestión</h1>
+
+    <div class="container">
+        <!-- Formulario de Agenda -->
+        <div class="form-container">
+            <form id="agendaForm" method="POST">
+                <h2>Agenda</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion">
+                </div>
+
+                <div class="form-group">
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" name="numero">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <input type="submit" value="Agregar a Agenda">
+            </form>
+
+            <table id="agendaTable">
+                <!-- Aquí se mostrarán los elementos de la agenda -->
+            </table>
+        </div>
+
+        <!-- Formulario de Lista de Tareas -->
+        <div class="form-container">
+            <form id="tareasForm">
+                <h2>Lista de Tareas</h2>
+                <div class="form-group">
+                    <label for="nombreTarea">Nombre de la tarea:</label>
+                    <input type="text" id="nombreTarea" name="nombreTarea">
+                </div>
+
+                <div class="form-group">
+                    <label for="numeroTarea">Número de la tarea:</label>
+                    <input type="text" id="numeroTarea" name="numeroTarea">
+                </div>
+
+                <!-- Otros campos de la Lista de Tareas -->
+                <input type="submit" value="Agregar Tarea">
+            </form>
+
+            <table id="tareasTable">
+                <!-- Aquí se mostrarán los elementos de la lista de tareas -->
+            </table>
+        </div>
+
+        <!-- Formulario de Recordatorio de Tareas -->
+        <div class="form-container">
+            <form id="recordatorioForm">
+                <h2>Recordatorio de Tareas</h2>
+                <div class="form-group">
+                    <label for="nombreRecordatorio">Nombre:</label>
+                    <input type="text" id="nombreRecordatorio" name="nombreRecordatorio">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha de Inicio:</label>
+                    <input type="date" id="fechaInicio" name="fechaInicio">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFin">Fecha de Fin:</label>
+                    <input type="date" id="fechaFin" name="fechaFin">
+                </div>
+
+                <!-- Otros campos del Recordatorio de Tareas -->
+                <input type="submit" value="Agregar Recordatorio">
+            </form>
+
+            <table id="recordatorioTable">
+                <!-- Aquí se mostrarán los elementos del recordatorio de tareas -->
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
